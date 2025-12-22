@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Gidratop</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="header-left">
+            <div class="header-logo">
+              <img src="" alt="Логотип">
+              <span class="header-logo-text">GIDRATOP</span>
+            </div>
+            <nav class="header-menu">
+              <a href="#">О компании</a>
+              <a href="#">Доставка</a>
+              <a href="#">Оплата</a>
+              <a href="#">Гарантия</a>
+              <a href="#">Контакты</a>
+            </nav>
+          </div>
+          <div class="header-right">
+            <a href="#" class="header-link">Вход</a>
+            <span class="header-sep">/</span>
+            <a href="#" class="header-link">Регистрация</a>
+          </div>
+        </div>
+
+        <div class="header-bottom">
+          <button class="btn-catalog">Каталог товаров</button>
+
+          <div class="header-search-wrap">
+            <input type="text" class="header-search-input" placeholder="Поиск по каталогу">
+            <button class="header-search-btn"></button>
+          </div>
+
+          <div class="header-phone-block">
+            <div class="header-phone">8 800 000 00 00</div>
+            <div class="header-phone-info">ежедневно с 9:00 до 21:00</div>
+          </div>
+
+          <div class="header-icons">
+            <button class="icon-btn icon-compare"></button>
+            <button class="icon-btn icon-fav"></button>
+            <button class="icon-btn icon-user"></button>
+            <button class="icon-btn icon-cart"></button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main slider -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-left">
+            <img src="" alt="Главный баннер" class="hero-main-image">
+          </div>
+          <div class="hero-right">
+            <div class="hero-promo-card">
+              <div class="hero-promo-label">Скидки на мебель</div>
+              <div class="hero-promo-title">
+                для ванной комнаты<br>до 10%
+              </div>
+              <button class="btn-primary">Подробнее</button>
+            </div>
+            <div class="hero-side-image">
+              <img src="" alt="Товар в акции">
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-controls">
+          <button class="slider-arrow slider-arrow-left"></button>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-arrow slider-arrow-right"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Акции -->
+<section class="section section-promo">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Акции</h2>
+      <a href="#" class="section-link">Все акции</a>
+    </div>
+
+    <div class="promo-row">
+      <a href="#" class="promo-card promo-card-large">
+        <img src="" alt="Зимняя распродажа">
+        <div class="promo-label promo-label-left">АКСЕССУАРЫ -15%</div>
+      </a>
+
+      <a href="#" class="promo-card promo-card-large">
+        <img src="" alt="Hansgrohe акция">
+        <div class="promo-label promo-label-top">hansgrohe</div>
+        <button class="promo-btn">Подробнее</button>
+      </a>
+
+      <a href="#" class="promo-card promo-card-large">
+        <img src="" alt="Скидка 5%">
+        <div class="promo-label promo-label-diagonal">-5%</div>
+      </a>
+    </div>
+
+    <div class="promo-controls">
+      <button class="slider-arrow slider-arrow-left small"></button>
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="slider-arrow slider-arrow-right small"></button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Популярные товары / табы -->
+    <section class="section section-products section-products-main">
+      <div class="container">
+        <div class="products-top-line">
+          <div class="section-tabs">
+            <button class="tab active">Хиты продаж</button>
+            <button class="tab">Новинки</button>
+            <button class="tab">Распродажа</button>
+          </div>
+          <div class="products-sort">
+            <span>Сортировать:</span>
+            <a href="#" class="active">по популярности</a>
+            <a href="#">по цене</a>
+            <a href="#">по рейтингу</a>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Товар 1"></div>
+            <div class="product-badges">
+              <span class="badge badge-discount">-15%</span>
+            </div>
+            <h3 class="product-title">Товар 1</h3>
+            <div class="product-meta">код 000001</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+                <div class="product-old-price">17 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Товар 2"></div>
+            <div class="product-badges">
+              <span class="badge badge-hit">Хит</span>
+            </div>
+            <h3 class="product-title">Товар 2</h3>
+            <div class="product-meta">код 000002</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Товар 3"></div>
+            <h3 class="product-title">Товар 3</h3>
+            <div class="product-meta">код 000003</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Товар 4"></div>
+            <h3 class="product-title">Товар 4</h3>
+            <div class="product-meta">код 000004</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="products-slider-controls">
+          <button class="slider-arrow slider-arrow-left small"></button>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-arrow slider-arrow-right small"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества / цифры + иконки -->
+    <section class="section section-benefits">
+      <div class="container">
+        <div class="benefits-row-top">
+          <div class="benefits-text">
+            <p>Мы не просто продаем товары для ванной – мы помогаем вам найти лучшее решение.</p>
+          </div>
+          <div class="benefits-numbers">
+            <div class="benefit-number-block">
+              <div class="benefit-number">2K</div>
+              <div class="benefit-label">наименований товаров</div>
+            </div>
+            <div class="benefit-number-block">
+              <div class="benefit-number">30</div>
+              <div class="benefit-label">известных брендов</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-icons-grid">
+          <div class="benefit-icon-item">
+            <img src="" alt="Иконка 1">
+            <div class="benefit-icon-title">Доставка</div>
+            <div class="benefit-icon-text">по всей России</div>
+          </div>
+          <div class="benefit-icon-item">
+            <img src="" alt="Иконка 2">
+            <div class="benefit-icon-title">Самовывоз</div>
+            <div class="benefit-icon-text">из пункта выдачи</div>
+          </div>
+          <div class="benefit-icon-item">
+            <img src="" alt="Иконка 3">
+            <div class="benefit-icon-title">Консультации</div>
+            <div class="benefit-icon-text">специалистов</div>
+          </div>
+          <div class="benefit-icon-item">
+            <img src="" alt="Иконка 4">
+            <div class="benefit-icon-title">Гарантия</div>
+            <div class="benefit-icon-text">качества</div>
+          </div>
+          <div class="benefit-icon-item">
+            <img src="" alt="Иконка 5">
+            <div class="benefit-icon-title">Ассортимент</div>
+            <div class="benefit-icon-text">для любых задач</div>
+          </div>
+          <div class="benefit-icon-item">
+            <img src="" alt="Иконка 6">
+            <div class="benefit-icon-title">Поддержка</div>
+            <div class="benefit-icon-text">после покупки</div>
+          </div>
+        </div>
+
+        <div class="benefits-gallery">
+          <button class="slider-arrow slider-arrow-left small"></button>
+          <div class="benefits-gallery-line">
+            <div class="benefits-gallery-item"><img src="" alt="Фото 1"></div>
+            <div class="benefits-gallery-item"><img src="" alt="Фото 2"></div>
+            <div class="benefits-gallery-item"><img src="" alt="Фото 3"></div>
+            <div class="benefits-gallery-item"><img src="" alt="Фото 4"></div>
+            <div class="benefits-gallery-item"><img src="" alt="Фото 5"></div>
+          </div>
+          <button class="slider-arrow slider-arrow-right small"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные категории -->
+    <section class="section section-categories">
+      <div class="container">
+        <h2 class="section-title">Популярные категории</h2>
+        <div class="categories-grid">
+          <a href="#" class="category-card">
+            <img src="" alt="Раковины">
+            <span>Раковины</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Унитазы">
+            <span>Унитазы</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Смесители">
+            <span>Смесители</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Системы инсталляции">
+            <span>Системы инсталляции</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Ванны">
+            <span>Ванны</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Мебель">
+            <span>Мебель для ванной</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Душевые">
+            <span>Душевые системы</span>
+          </a>
+          <a href="#" class="category-card">
+            <img src="" alt="Аксессуары">
+            <span>Аксессуары</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Горизонтальные баннеры (2 шт) -->
+    <section class="section section-banners">
+      <div class="container">
+        <div class="banners-row">
+          <a href="#" class="banner-card"><img src="" alt="Баннер 1"></a>
+          <a href="#" class="banner-card"><img src="" alt="Баннер 2"></a>
+        </div>
+
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Рекомендованные товары -->
+    <section class="section section-products section-products-reco">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Рекомендованные товары</h2>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Реком. товар 1"></div>
+            <h3 class="product-title">Товар 1</h3>
+            <div class="product-meta">код 000101</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Реком. товар 2"></div>
+            <h3 class="product-title">Товар 2</h3>
+            <div class="product-meta">код 000102</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Реком. товар 3"></div>
+            <h3 class="product-title">Товар 3</h3>
+            <div class="product-meta">код 000103</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-img-wrap"><img src="" alt="Реком. товар 4"></div>
+            <h3 class="product-title">Товар 4</h3>
+            <div class="product-meta">код 000104</div>
+            <div class="product-bottom">
+              <div class="product-price-block">
+                <div class="product-price">15 000 ₽</div>
+              </div>
+              <button class="btn-secondary">В корзину</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="products-slider-controls">
+          <button class="slider-arrow slider-arrow-left small"></button>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-arrow slider-arrow-right small"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные бренды -->
+    <section class="section section-brands">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Популярные бренды</h2>
+          <a href="#" class="section-link">Все бренды</a>
+        </div>
+        <div class="brands-row">
+          <div class="brand-item"><img src="" alt="Бренд 1"></div>
+          <div class="brand-item"><img src="" alt="Бренд 2"></div>
+          <div class="brand-item"><img src="" alt="Бренд 3"></div>
+          <div class="brand-item"><img src="" alt="Бренд 4"></div>
+          <div class="brand-item"><img src="" alt="Бренд 5"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Новости и события -->
+    <section class="section section-news">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Новости и события</h2>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-image"><img src="" alt="Новость 1"></div>
+            <div class="news-content">
+              <h3 class="news-title">Заголовок новости</h3>
+              <p class="news-text">Краткое описание новости в две строки.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-image"><img src="" alt="Новость 2"></div>
+            <div class="news-content">
+              <h3 class="news-title">Заголовок новости</h3>
+              <p class="news-text">Краткое описание новости в две строки.</p>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-image"><img src="" alt="Новость 3"></div>
+            <div class="news-content">
+              <h3 class="news-title">Заголовок новости</h3>
+              <p class="news-text">Краткое описание новости в две строки.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="news-slider-controls">
+          <button class="slider-arrow slider-arrow-left small"></button>
+          <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button class="slider-arrow slider-arrow-right small"></button>
+        </div>
+
+        <div class="news-feedback">
+          <button class="btn-outline">Отправить сообщение</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="" alt="Логотип">
+            <span>GIDRATOP</span>
+          </div>
+          <div class="footer-social">
+            <a href="#">vk</a>
+            <a href="#">fb</a>
+            <a href="#">ig</a>
+            <a href="#">yt</a>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Покупателям</h4>
+            <a href="#">Как заказать</a>
+            <a href="#">Оплата</a>
+            <a href="#">Доставка</a>
+          </div>
+          <div class="footer-column">
+            <h4>Компания</h4>
+            <a href="#">О нас</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <p>г. Москва</p>
+            <p>8 800 000 00 00</p>
+            <p>info@gidratop.ru</p>
+          </div>
+          <div class="footer-column footer-column-up">
+            <button class="btn-primary footer-btn">Наверх</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2025 GIDRATOP</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
