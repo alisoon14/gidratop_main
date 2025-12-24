@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог – Ванны</title>
+  <link rel="stylesheet" href="../styles/catalog.css">
+</head>
+<body>
+
+<div class="page">
+ <header class="header">
+  <div class="container">
+
+    <!-- Верхняя полоса -->
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="header-logo">
+          <img src="" alt="Логотип" class="header-logo-img">
+          <div class="header-logo-text-wrap">
+            <div class="header-logo-name">GIDRATOP</div>
+            <div class="header-logo-sub">Европейская сантехника</div>
+          </div>
+        </div>
+
+        <nav class="header-menu">
+          <a href="#">О нас</a>
+          <a href="#">Производители</a>
+          <a href="#">Гарантии и возврат</a>
+          <a href="#">Доставка</a>
+          <a href="#">Оплата</a>
+          <a href="#">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="header-top-right">
+        <span class="header-icon-user"></span>
+        <a href="#" class="header-auth-link">Вход / Регистрация</a>
+      </div>
+    </div>
+
+    <!-- Нижняя полоса -->
+    <div class="header-bottom">
+      <button class="header-catalog">
+        <span class="catalog-dots">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </span>
+        <span>Каталог товаров</span>
+      </button>
+
+      <div class="header-search">
+        <input type="text" class="header-search-input" placeholder="Поиск товаров и брендов">
+        <button class="header-search-btn"></button>
+      </div>
+
+      <div class="header-phone-block">
+        <div class="header-phone">8‑800‑000‑00‑00</div>
+        <a href="#" class="header-callback">Вам перезвонить?</a>
+      </div>
+
+      <div class="header-actions">
+        <button class="header-action">
+          <span class="header-action-icon header-action-fav"></span>
+          <span class="header-action-text">Избранное</span>
+        </button>
+        <button class="header-action">
+          <span class="header-action-icon header-action-compare"></span>
+          <span class="header-action-text">Сравнение</span>
+        </button>
+        <button class="header-action">
+          <span class="header-action-icon header-action-cart"></span>
+          <span class="header-action-text">Корзина</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+  <main class="catalog">
+    <div class="container">
+
+      <!-- Хлебные крошки -->
+      <div class="catalog-breadcrumbs">
+        <a href="#">Главная</a>
+        <span>/</span>
+        <a href="#">Каталог</a>
+        <span>/</span>
+        <span>Ванны</span>
+      </div>
+
+      <!-- Заголовок и фон Bath -->
+    <div class="catalog-title-wrap">
+        <h1 class="catalog-title">Ванны</h1>
+        <span class="catalog-title-ghost">Baths</span>
+     </div>
+
+      <!-- Верхняя панель сортировки и видов -->
+      <div class="catalog-top-panel">
+        <div class="catalog-sort">
+          <span>Сортировать:</span>
+          <a href="#" class="active">По популярности</a>
+          <a href="#">Сначала дешевые</a>
+          <a href="#">Сначала дорогие</a>
+        </div>
+        <div class="catalog-view">
+          <button class="view-btn active"></button>
+          <button class="view-btn"></button>
+        </div>
+      </div>
+
+      <div class="catalog-layout">
+        <!-- Левая колонка фильтров -->
+        <aside class="catalog-filters">
+          <div class="filter-block">
+            <div class="filter-title">Ванны</div>
+            <ul class="filter-list">
+              <li><label><input type="checkbox"> Акриловые ванны</label></li>
+              <li><label><input type="checkbox"> Чугунные ванны</label></li>
+              <li><label><input type="checkbox"> Стальные ванны</label></li>
+              <li><label><input type="checkbox"> Гидромассажные ванны</label></li>
+            </ul>
+          </div>
+
+          <div class="filter-block">
+            <div class="filter-title">Прочие категории</div>
+            <ul class="filter-list">
+              <li><label><input type="checkbox"> Аксессуары</label></li>
+              <li><label><input type="checkbox"> Душевые</label></li>
+              <li><label><input type="checkbox"> Смесители</label></li>
+              <li><label><input type="checkbox"> Раковины</label></li>
+            </ul>
+          </div>
+
+          <div class="filter-block">
+            <div class="filter-title">Ширина, см</div>
+            <input type="text" class="filter-input" placeholder="от">
+            <input type="text" class="filter-input" placeholder="до">
+          </div>
+
+          <div class="filter-block">
+            <div class="filter-title">Длина, см</div>
+            <input type="text" class="filter-input" placeholder="от">
+            <input type="text" class="filter-input" placeholder="до">
+          </div>
+
+          <div class="filter-buttons">
+            <button class="btn-primary">Все фильтры</button>
+            <button class="btn-outline">Применить</button>
+          </div>
+
+          <button class="filter-reset">Сбросить все фильтры</button>
+
+          <div class="filter-info-card">
+            <div class="filter-info-title">Как подобрать ванну</div>
+            <p class="filter-info-text">Советы и рекомендации экспертов.</p>
+            <button class="btn-outline small">Перейти в раздел</button>
+          </div>
+        </aside>
+
+        <!-- Правая колонка с товарами -->
+        <section class="catalog-products">
+          <!-- Сетка карточек 3 в ряд, несколько рядов -->
+          <div class="catalog-products-grid">
+
+            <!-- Ряд 1 -->
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <a href = ../templates/product.html><div class="product-img"><img src="" alt="Товар 1"></div></a>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 2"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 3"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 1"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 2"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 3"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 1"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 2"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 3"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 1"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 2"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 3"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 1"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 2"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 3"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 1"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 2"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-badge product-badge-green">Хит продаж</div>
+              <div class="product-img"><img src="" alt="Товар 3"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <ul class="product-params">
+                  <li>Бренд: ...</li>
+                  <li>Страна: ...</li>
+                  <li>Размер: ...</li>
+                </ul>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">В корзину</button>
+                </div>
+                <div class="product-icons">
+                  <button class="icon-btn small"></button>
+                  <button class="icon-btn small"></button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Ещё несколько рядов карточек под макет (скопируй блок .product-card столько раз, сколько нужно) -->
+
+          </div>
+
+          <!-- Блок с одиночной карточкой + баннер под сеткой (как слева внизу) -->
+          <div class="catalog-extra-row">
+            <article class="product-card product-card-wide">
+              <div class="product-badge product-badge-blue">Новинка</div>
+              <div class="product-img"><img src="" alt="Товар акции"></div>
+              <div class="product-body">
+                <div class="product-name">Наименование</div>
+                <div class="product-bottom">
+                  <div class="product-price">15 000 ₽</div>
+                  <button class="btn-primary small">Подробнее</button>
+                </div>
+              </div>
+            </article>
+
+            <div class="catalog-extra-badge">
+              <div class="extra-title">Популярные подборки</div>
+              <ul class="extra-list">
+                <li><a href="#">Подборка 1</a></li>
+                <li><a href="#">Подборка 2</a></li>
+                <li><a href="#">Подборка 3</a></li>
+                <li><a href="#">Подборка 4</a></li>
+                <li><a href="#">Подборка 5</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Показать ещё -->
+          <div class="catalog-more">
+            <button class="btn-outline">Показать ещё</button>
+          </div>
+
+          <!-- Пагинация -->
+          <div class="catalog-pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <span class="page-dots">...</span>
+            <button class="page-btn">10</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Вы недавно смотрели -->
+      <section class="recently">
+        <h2 class="recently-title">Вы недавно смотрели</h2>
+        <div class="recently-ghost">Recently</div>
+        <div class="recently-row">
+          <div class="recently-card">
+            <div class="recently-img"><img src="" alt="Недавний товар 1"></div>
+            <div class="recently-name">Наименование</div>
+          </div>
+          <div class="recently-card">
+            <div class="recently-img"><img src="" alt="Недавний товар 2"></div>
+            <div class="recently-name">Наименование</div>
+          </div>
+          <div class="recently-card">
+            <div class="recently-img"><img src="" alt="Недавний товар 3"></div>
+            <div class="recently-name">Наименование</div>
+          </div>
+          <div class="recently-card">
+            <div class="recently-img"><img src="" alt="Недавний товар 4"></div>
+            <div class="recently-name">Наименование</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="" alt="Логотип">
+            <span>GIDRATOP</span>
+          </div>
+          <div class="footer-social">
+            <a href="#">vk</a>
+            <a href="#">fb</a>
+            <a href="#">ig</a>
+            <a href="#">yt</a>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Покупателям</h4>
+            <a href="#">Как заказать</a>
+            <a href="#">Оплата</a>
+            <a href="#">Доставка</a>
+          </div>
+          <div class="footer-column">
+            <h4>Компания</h4>
+            <a href="#">О нас</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <p>г. Москва</p>
+            <p>8 800 000 00 00</p>
+            <p>info@gidratop.ru</p>
+          </div>
+          <div class="footer-column footer-column-up">
+            <button class="btn-primary footer-btn">Наверх</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2025 GIDRATOP</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+</div>
+
+</body>
+</html>

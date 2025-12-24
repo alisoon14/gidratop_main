@@ -1,4 +1,9 @@
-/* Base */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 *,
 *::before,
@@ -13,9 +18,6 @@ body {
   background-color: #ffffff;
 }
 
-.page {
-  min-width: 1440px;
-}
 
 a {
   color: inherit;
@@ -39,18 +41,20 @@ img {
 /* Header */
 
 .header {
-  border-bottom: 1px solid #e4e7ee;
   background-color: #ffffff;
+  border-bottom: 1px solid #e4e7ee;
 }
+
+/* верхняя полоса */
 
 .header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px 6px;
+  padding: 12px 40px 8px;
 }
 
-.header-left {
+.header-top-left {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -59,52 +63,102 @@ img {
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
-.header-logo-text {
+.header-logo-img {
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.header-logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo-name {
+  font-size: 18px;
   font-weight: 700;
-  font-size: 16px;
+  letter-spacing: 0.04em;
+}
+
+.header-logo-sub {
+  font-size: 10px;
   text-transform: uppercase;
+  color: #8f96a6;
 }
 
 .header-menu {
   display: flex;
-  gap: 18px;
+  gap: 22px;
   font-size: 13px;
 }
 
-.header-right {
+.header-menu a {
+  color: #5d6474;
+}
+
+.header-top-right {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   font-size: 13px;
 }
+
+.header-icon-user {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cfd4e3;
+}
+
+.header-auth-link {
+  color: #5d6474;
+}
+
+/* нижняя полоса */
 
 .header-bottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 6px 40px 14px;
-  gap: 20px;
+  padding: 8px 40px 12px;
+  gap: 24px;
 }
 
-.btn-catalog {
-  background-color: #00a0e3;
-  color: #ffffff;
+/* кнопка каталог */
+
+.header-catalog {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   border: none;
-  padding: 11px 20px;
-  border-radius: 3px;
-  font-size: 13px;
+  background: none;
   cursor: pointer;
-  white-space: nowrap;
+  font-size: 14px;
+  color: #00a0e3;
 }
 
-.header-search-wrap {
+.catalog-dots {
+  display: grid;
+  grid-template-columns: repeat(3, 4px);
+  grid-template-rows: repeat(3, 4px);
+  gap: 3px;
+}
+
+.catalog-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #00a0e3;
+}
+
+/* поиск */
+
+.header-search {
   flex: 1;
   display: flex;
-  align-items: center;
-  max-width: 620px;
+  max-width: 560px;
 }
 
 .header-search-input {
@@ -117,42 +171,96 @@ img {
 }
 
 .header-search-btn {
-  width: 44px;
+  width: 46px;
   height: 38px;
   border-radius: 0 3px 3px 0;
   border: 1px solid #00a0e3;
   background-color: #00a0e3;
   cursor: pointer;
+  position: relative;
 }
 
+/* имитация иконки лупы */
+
+.header-search-btn::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 11px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.header-search-btn::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  width: 7px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* телефон + коллбек */
+
 .header-phone-block {
-  text-align: right;
   min-width: 150px;
+  text-align: left;
 }
 
 .header-phone {
   font-size: 16px;
   font-weight: 700;
+  color: #5d6474;
 }
 
-.header-phone-info {
-  font-size: 11px;
-  color: #7f8692;
+.header-callback {
+  font-size: 12px;
+  color: #37b76b;
 }
 
-.header-icons {
+/* иконки действий */
+
+.header-actions {
   display: flex;
-  gap: 8px;
+  gap: 18px;
 }
 
-.icon-btn {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid #d9deea;
-  background-color: #ffffff;
+.header-action {
+  background: none;
+  border: none;
   cursor: pointer;
+  text-align: center;
+  font-size: 11px;
+  color: #7b8190;
 }
+
+.header-action-icon {
+  display: block;
+  margin: 0 auto 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #cfd4e3;
+}
+
+/* разные «иконки» по цвету, потом сможешь заменить svg */
+
+.header-action-fav {
+  border-color: #00a0e3;
+}
+
+.header-action-compare {
+  border-color: #ffb000;
+}
+
+.header-action-cart {
+  border-color: #00a0e3;
+}
+
 
 /* Hero */
 
@@ -835,4 +943,85 @@ img {
   align-items: center;
   justify-content: space-between;
   font-size: 12px;
+}
+@media (max-width: 768px) {
+  .header-top,
+  .header-bottom {
+    padding: 8px 20px;
+    flex-wrap: wrap;
+  }
+
+  .header-menu {
+    display: none; /* как в макете, меню уезжает в бургер */
+  }
+
+  .hero-banner {
+    height: 260px;
+  }
+
+  .section {
+    padding: 20px 0;
+  }
+
+  .promo-row {
+    gap: 16px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-row-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .benefits-icons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banners-row {
+    grid-template-columns: 1fr;
+  }
+
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .header-top,
+  .header-bottom {
+    padding: 6px 12px;
+  }
+
+  .header-phone-block {
+    display: none;
+  }
+
+  .hero-banner {
+    height: 220px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-icons-grid,
+  .categories-grid,
+  .news-grid,
+  .footer-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 18px;
+  }
 }

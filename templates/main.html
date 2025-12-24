@@ -4,73 +4,89 @@
   <meta charset="UTF-8">
   <title>Gidratop</title>
   <link rel="stylesheet" href="../styles/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
   <div class="page">
 
     <!-- Header -->
-    <header class="header">
-      <div class="container">
-        <div class="header-top">
-          <div class="header-left">
-            <div class="header-logo">
-              <img src="" alt="Логотип">
-              <span class="header-logo-text">GIDRATOP</span>
-            </div>
-            <nav class="header-menu">
-              <a href="#">О компании</a>
-              <a href="#">Доставка</a>
-              <a href="#">Оплата</a>
-              <a href="#">Гарантия</a>
-              <a href="#">Контакты</a>
-            </nav>
-          </div>
-          <div class="header-right">
-            <a href="#" class="header-link">Вход</a>
-            <span class="header-sep">/</span>
-            <a href="#" class="header-link">Регистрация</a>
+<header class="header">
+  <div class="container">
+
+    <!-- Верхняя полоса -->
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="header-logo">
+          <img src="" alt="Логотип" class="header-logo-img">
+          <div class="header-logo-text-wrap">
+            <div class="header-logo-name">GIDRATOP</div>
+            <div class="header-logo-sub">Европейская сантехника</div>
           </div>
         </div>
 
-        <div class="header-bottom">
-          <button class="btn-catalog">Каталог товаров</button>
-
-          <div class="header-search-wrap">
-            <input type="text" class="header-search-input" placeholder="Поиск по каталогу">
-            <button class="header-search-btn"></button>
-          </div>
-
-          <div class="header-phone-block">
-            <div class="header-phone">8 800 000 00 00</div>
-            <div class="header-phone-info">ежедневно с 9:00 до 21:00</div>
-          </div>
-
-          <div class="header-icons">
-            <button class="icon-btn icon-compare"></button>
-            <button class="icon-btn icon-fav"></button>
-            <button class="icon-btn icon-user"></button>
-            <button class="icon-btn icon-cart"></button>
-          </div>
-        </div>
+        <nav class="header-menu">
+          <a href="#">О нас</a>
+          <a href="#">Производители</a>
+          <a href="#">Гарантии и возврат</a>
+          <a href="#">Доставка</a>
+          <a href="#">Оплата</a>
+          <a href="#">Контакты</a>
+        </nav>
       </div>
-    </header>
+
+      <div class="header-top-right">
+        <span class="header-icon-user"></span>
+        <a href="#" class="header-auth-link">Вход / Регистрация</a>
+      </div>
+    </div>
+
+    <!-- Нижняя полоса -->
+    <div class="header-bottom">
+      <button class="header-catalog">
+        <span class="catalog-dots">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </span>
+        <span>Каталог товаров</span>
+      </button>
+
+      <div class="header-search">
+        <input type="text" class="header-search-input" placeholder="Поиск товаров и брендов">
+        <button class="header-search-btn"></button>
+      </div>
+
+      <div class="header-phone-block">
+        <div class="header-phone">8‑800‑000‑00‑00</div>
+        <a href="#" class="header-callback">Вам перезвонить?</a>
+      </div>
+
+      <div class="header-actions">
+        <button class="header-action">
+          <span class="header-action-icon header-action-fav"></span>
+          <span class="header-action-text">Избранное</span>
+        </button>
+        <button class="header-action">
+          <span class="header-action-icon header-action-compare"></span>
+          <span class="header-action-text">Сравнение</span>
+        </button>
+        <button class="header-action">
+          <span class="header-action-icon header-action-cart"></span>
+          <span class="header-action-text">Корзина</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
 
     <!-- Main slider -->
     <section class="hero">
   <div class="container">
     <div class="hero-banner">
-      <img src="" alt="Главный баннер" class="hero-bg">
-      <div class="hero-promo-panel">
-        <div class="hero-promo-title">
-          Скидки на мебель<br>для ванной комнаты
-        </div>
-        <div class="hero-promo-discount">
-          до <span>10%</span>
-        </div>
-        <button class="btn-primary hero-promo-btn">Подробнее</button>
-      </div>
-
+      <img src = "../assets/baner(main).png" alt="Главный баннер" class="hero-bg">
       <div class="hero-arrows">
         <button class="slider-arrow slider-arrow-left"></button>
         <button class="slider-arrow slider-arrow-right"></button>

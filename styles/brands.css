@@ -1,0 +1,887 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e7ee;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* верхняя полоса */
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px 8px;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo-img {
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.header-logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.header-logo-sub {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #8f96a6;
+}
+
+.header-menu {
+  display: flex;
+  gap: 22px;
+  font-size: 13px;
+}
+
+.header-menu a {
+  color: #5d6474;
+}
+
+.header-top-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.header-icon-user {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #cfd4e3;
+}
+
+.header-auth-link {
+  color: #5d6474;
+}
+
+/* нижняя полоса */
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  padding: 8px 40px 12px;
+  gap: 24px;
+}
+
+/* кнопка каталог */
+
+.header-catalog {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #00a0e3;
+}
+
+.catalog-dots {
+  display: grid;
+  grid-template-columns: repeat(3, 4px);
+  grid-template-rows: repeat(3, 4px);
+  gap: 3px;
+}
+
+.catalog-dots span {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #00a0e3;
+}
+
+/* поиск */
+
+.header-search {
+  flex: 1;
+  display: flex;
+  max-width: 560px;
+}
+
+.header-search-input {
+  flex: 1;
+  height: 38px;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid #d9deea;
+  padding: 0 12px;
+  font-size: 13px;
+}
+
+.header-search-btn {
+  width: 46px;
+  height: 38px;
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #00a0e3;
+  background-color: #00a0e3;
+  cursor: pointer;
+  position: relative;
+}
+
+/* имитация иконки лупы */
+
+.header-search-btn::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 11px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+.header-search-btn::after {
+  content: "";
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  width: 7px;
+  height: 2px;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+
+/* телефон + коллбек */
+
+.header-phone-block {
+  min-width: 150px;
+  text-align: left;
+}
+
+.header-phone {
+  font-size: 16px;
+  font-weight: 700;
+  color: #5d6474;
+}
+
+.header-callback {
+  font-size: 12px;
+  color: #37b76b;
+}
+
+/* иконки действий */
+
+.header-actions {
+  display: flex;
+  gap: 18px;
+}
+
+.header-action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-size: 11px;
+  color: #7b8190;
+}
+
+.header-action-icon {
+  display: block;
+  margin: 0 auto 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #cfd4e3;
+}
+
+/* разные «иконки» по цвету, потом сможешь заменить svg */
+
+.header-action-fav {
+  border-color: #00a0e3;
+}
+
+.header-action-compare {
+  border-color: #ffb000;
+}
+
+.header-action-cart {
+  border-color: #00a0e3;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.page {
+  min-width: 1440px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* хлебные крошки */
+
+.brands-breadcrumbs {
+  margin: 18px 0 10px;
+  font-size: 12px;
+  color: #9aa0ad;
+}
+
+.brands-breadcrumbs a {
+  color: #9aa0ad;
+}
+
+/* заголовок + фон */
+
+.brands-title-wrap {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.brands-title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brands-title-ghost {
+  position: absolute;
+  left: 0;
+  top: -24px;
+  font-size: 72px;
+  font-weight: 700;
+  color: #f3f6fb;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* блок стран */
+
+.brands-countries {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px 18px;
+  padding: 18px 24px;
+  border-radius: 4px;
+  border: 1px solid #e0e4ef;
+  margin-bottom: 24px;
+}
+
+.country-card {
+  text-align: center;
+  font-size: 12px;
+}
+
+.country-flag {
+  height: 40px;
+  margin-bottom: 6px;
+  background-color: #f3f6fb;
+  border-radius: 3px;
+}
+
+/* основной двухколоночный блок */
+
+.brands-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 24px;
+}
+
+/* фильтры слева */
+
+.brands-filters {
+  font-size: 12px;
+}
+
+/* один блок: "Ценовая группа", "Страна" */
+
+.brands-filter-block {
+  border: 1px solid #e0e4ef;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-bottom: 12px;
+  padding: 12px 14px 10px;
+}
+
+.brands-filter-title {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.brands-filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.brands-filter-list li {
+  margin-bottom: 4px;
+}
+
+.brands-filter-list label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.brands-filter-list input[type="checkbox"],
+.brands-filter-list input[type="radio"] {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+}
+
+/* правая колонка */
+
+.brands-content {
+  padding-top: 2px;
+}
+
+/* панель алфавита и видов */
+
+.brands-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+/* общая полоса */
+
+.brands-alpha-bar {
+  display: grid;
+  grid-template-columns: 80px 1fr 60px 60px 80px;
+  border: 1px solid #e0e4ef;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 12px;
+}
+
+/* "Все" слева */
+
+.brands-alpha-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #e0e4ef;
+  color: #00a0e3;
+}
+
+/* буквы A–Z по центру */
+
+.brands-alpha-letters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  letter-spacing: 0.16em;
+  color: #7b8190;
+  border-right: 1px solid #e0e4ef;
+}
+
+/* А‑Я и 0‑9 */
+
+.brands-alpha-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #e0e4ef;
+  color: #7b8190;
+  cursor: pointer;
+}
+
+.brands-alpha-mode:last-of-type {
+  border-right: none;
+}
+
+.brands-alpha-mode.active {
+  color: #00a0e3;
+}
+
+/* иконки вида справа */
+
+.brands-alpha-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-left: 1px solid #e0e4ef;
+}
+
+.brands-view-icon-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #d4d9e7;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+
+/* сетка брендов */
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 18px;
+  margin-bottom: 18px;
+}
+
+.brand-card {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #dde2ee;
+  background-color: #ffffff;
+  padding: 10px 12px 12px;
+  font-size: 12px;
+}
+
+.brand-logo {
+  height: 70px;
+  background-color: #f3f6fb;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.brand-name {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.brand-country {
+  color: #8f96a6;
+}
+
+/* кнопки снизу */
+
+.btn-outline {
+  background-color: transparent;
+  color: #00a0e3;
+  border-radius: 3px;
+  border: 1px solid #00a0e3;
+  padding: 7px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.brands-more {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* пагинация */
+
+.brands-pagination {
+  text-align: center;
+  font-size: 12px;
+  color: #7b8190;
+}
+
+.page-btn {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #dde2ee;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.page-btn.active {
+  background-color: #00a0e3;
+  color: #ffffff;
+  border-color: #00a0e3;
+}
+
+.page-dots {
+  margin: 0 4px;
+}
+
+/* кнопка сообщения */
+
+.brands-feedback {
+  margin-top: 26px;
+  text-align: right;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+.page {
+  min-width: 1440px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px 40px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* хлебные крошки */
+
+.brands-breadcrumbs {
+  margin: 18px 0 10px;
+  font-size: 12px;
+  color: #9aa0ad;
+}
+
+.brands-breadcrumbs a {
+  color: #9aa0ad;
+}
+
+/* заголовок + фон */
+
+.brands-title-wrap {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.brands-title {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brands-title-ghost {
+  position: absolute;
+  left: 0;
+  top: -24px;
+  font-size: 72px;
+  font-weight: 700;
+  color: #f3f6fb;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* блок стран */
+
+.brands-countries {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px 18px;
+  padding: 18px 24px;
+  border-radius: 4px;
+  border: 1px solid #e0e4ef;
+  margin-bottom: 24px;
+}
+
+.country-card {
+  text-align: center;
+  font-size: 12px;
+}
+
+.country-flag {
+  height: 40px;
+  margin-bottom: 6px;
+  background-color: #f3f6fb;
+  border-radius: 3px;
+}
+
+/* основной двухколоночный блок */
+
+.brands-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 24px;
+}
+
+/* фильтры слева */
+
+.brands-filters {
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.filter-block {
+  padding: 12px 12px 8px;
+  border: 1px solid #e0e4ef;
+  border-bottom: none;
+  font-size: 12px;
+}
+
+.filter-block:last-of-type {
+  border-bottom: 1px solid #e0e4ef;
+}
+
+.filter-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.filter-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter-list li {
+  margin-bottom: 4px;
+}
+
+/* правая колонка */
+
+.brands-content {
+  padding-top: 2px;
+}
+
+/* панель алфавита и видов */
+
+.brands-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.brands-alpha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.alpha-btn {
+  min-width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 11px;
+  cursor: pointer;
+  color: #7b8190;
+  padding: 0 6px;
+}
+
+.alpha-btn.active {
+  border-color: #00a0e3;
+  color: #00a0e3;
+}
+
+.brands-view-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.view-letter {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #7b8190;
+}
+
+.view-letter.active {
+  color: #00a0e3;
+}
+
+.view-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+  border: 1px solid #d4d9e7;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+/* сетка брендов */
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px 18px;
+  margin-bottom: 18px;
+}
+
+.brand-card {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #dde2ee;
+  background-color: #ffffff;
+  padding: 10px 12px 12px;
+  font-size: 12px;
+}
+
+.brand-logo {
+  height: 70px;
+  background-color: #f3f6fb;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.brand-name {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.brand-country {
+  color: #8f96a6;
+}
+
+/* кнопки снизу */
+
+.btn-outline {
+  background-color: transparent;
+  color: #00a0e3;
+  border-radius: 3px;
+  border: 1px solid #00a0e3;
+  padding: 7px 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.brands-more {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* пагинация */
+
+.brands-pagination {
+  text-align: center;
+  font-size: 12px;
+  color: #7b8190;
+}
+
+.page-btn {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #dde2ee;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.page-btn.active {
+  background-color: #00a0e3;
+  color: #ffffff;
+  border-color: #00a0e3;
+}
+
+.page-dots {
+  margin: 0 4px;
+}
+
+/* кнопка сообщения */
+
+.brands-feedback {
+  margin-top: 26px;
+  text-align: right;
+}
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid #e4e7ee;
+  padding: 24px 0 18px;
+  font-size: 13px;
+  color: #808794;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.footer-social {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 14px;
+}
+
+.footer-column h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #333333;
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.footer-column p {
+  margin: 0 0 4px;
+}
+
+.footer-btn {
+  width: 100%;
+}
+
+.footer-bottom {
+  border-top: 1px solid #dde2ee;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}

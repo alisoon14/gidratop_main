@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карточка товара</title>
+  <link rel="stylesheet" href="../styles/product.css">
+</head>
+<body>
+
+<div class="page">
+
+<header class="header">
+  <div class="container">
+
+    <!-- Верхняя полоса -->
+    <div class="header-top">
+      <div class="header-top-left">
+        <div class="header-logo">
+          <img src="" alt="Логотип" class="header-logo-img">
+          <div class="header-logo-text-wrap">
+            <div class="header-logo-name">GIDRATOP</div>
+            <div class="header-logo-sub">Европейская сантехника</div>
+          </div>
+        </div>
+
+        <nav class="header-menu">
+          <a href="#">О нас</a>
+          <a href="#">Производители</a>
+          <a href="#">Гарантии и возврат</a>
+          <a href="#">Доставка</a>
+          <a href="#">Оплата</a>
+          <a href="#">Контакты</a>
+        </nav>
+      </div>
+
+      <div class="header-top-right">
+        <span class="header-icon-user"></span>
+        <a href="#" class="header-auth-link">Вход / Регистрация</a>
+      </div>
+    </div>
+
+    <!-- Нижняя полоса -->
+    <div class="header-bottom">
+      <button class="header-catalog">
+        <span class="catalog-dots">
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </span>
+        <span>Каталог товаров</span>
+      </button>
+
+      <div class="header-search">
+        <input type="text" class="header-search-input" placeholder="Поиск товаров и брендов">
+        <button class="header-search-btn"></button>
+      </div>
+
+      <div class="header-phone-block">
+        <div class="header-phone">8‑800‑000‑00‑00</div>
+        <a href="#" class="header-callback">Вам перезвонить?</a>
+      </div>
+
+      <div class="header-actions">
+        <button class="header-action">
+          <span class="header-action-icon header-action-fav"></span>
+          <span class="header-action-text">Избранное</span>
+        </button>
+        <button class="header-action">
+          <span class="header-action-icon header-action-compare"></span>
+          <span class="header-action-text">Сравнение</span>
+        </button>
+        <button class="header-action">
+          <span class="header-action-icon header-action-cart"></span>
+          <span class="header-action-text">Корзина</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+  <main class="product-page">
+    <div class="container">
+
+      <!-- Хлебные крошки -->
+      <div class="product-breadcrumbs">
+        <a href="#">Главная</a><span>/</span>
+        <a href="#">Каталог</a><span>/</span>
+        <a href="#">Ванны</a><span>/</span>
+        <a href="#">Акриловые ванны</a><span>/</span>
+        <span>Ванна акриловая прямоугольная Акватек Миа 140*70 см без гидромассажа</span>
+      </div>
+
+      <div class="product-main">
+        <!-- Левая колонка: галерея -->
+        <section class="product-gallery">
+          <div class="product-gallery-main">
+            <img src="" alt="Основное фото товара">
+            <div class="product-label product-label-hit">Хит продаж</div>
+          </div>
+          <div class="product-gallery-thumbs">
+            <button class="thumb active">
+              <img src="" alt="Миниатюра 1">
+            </button>
+            <button class="thumb">
+              <img src="" alt="Миниатюра 2">
+            </button>
+            <button class="thumb">
+              <img src="" alt="Миниатюра 3">
+            </button>
+            <button class="thumb">
+              <img src="" alt="Миниатюра 4">
+            </button>
+          </div>
+        </section>
+
+        <!-- Правая колонка: инфо и покупка -->
+        <section class="product-info">
+          <h1 class="product-title">
+            Ванна акриловая прямоугольная Акватек Мия 140*70 см без гидромассажа
+          </h1>
+
+          <div class="product-rating-row">
+            <div class="product-stars">
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+              <span class="star"></span>
+            </div>
+            <a href="#" class="product-reviews-link">3 отзыва</a>
+          </div>
+
+          <div class="product-short">
+            <h2 class="product-short-title">Коротко о товаре</h2>
+            <ul class="product-short-list">
+              <li>Тип товара: ...</li>
+              <li>Артикул: ...</li>
+              <li>Бренд: ...</li>
+              <li>Серия: ...</li>
+              <li>Материал: ...</li>
+              <li>Размеры: ...</li>
+              <li>Глубина: ...</li>
+              <li>Страна: ...</li>
+            </ul>
+            <a href="#" class="product-short-link">Все характеристики</a>
+          </div>
+
+          <div class="product-buy-block">
+            <div class="product-price-main">15 000 ₽</div>
+
+            <button class="btn-primary product-btn-cart">В корзину</button>
+            <button class="btn-outline product-btn-oneclick">Купить в один клик</button>
+
+            <div class="product-availability">
+              В наличии в магазине<br>
+              Самовывоз от ... дней<br>
+              Доставка от ... дней
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Табы: о товаре / хар-ки / комплектация / документация / отзывы / вопросы -->
+      <div class="product-tabs">
+        <button class="product-tab">О товаре</button>
+        <button class="product-tab">Характеристики</button>
+        <button class="product-tab active">Комплектация</button>
+        <button class="product-tab">Документация</button>
+        <button class="product-tab">Отзывы</button>
+        <button class="product-tab">Вопросы/ответы</button>
+      </div>
+
+      <!-- Блок комплектации -->
+      <section class="product-complect">
+        <div class="product-complect-header">
+          <div class="product-complect-title">Комплектация</div>
+          <div class="product-complect-desc">
+            Вся комплектация соответствует ... позициям
+          </div>
+          <div class="product-complect-sum">
+            Стоимость: <span>30 000 ₽</span>
+          </div>
+          <button class="btn-primary small">В корзину</button>
+        </div>
+
+        <div class="product-complect-extra">
+          <div class="product-complect-extra-title">Дополнительно</div>
+          <div class="product-complect-extra-text">Слив‑перелив и т.п.</div>
+        </div>
+
+        <div class="product-complect-card">
+          <button class="product-complect-add">+</button>
+          <div class="product-complect-image">
+            <img src="" alt="Дополнительный товар">
+          </div>
+          <div class="product-complect-info">
+            <div class="product-complect-name">Акриловая ванна Акватек Мия 140*70 см</div>
+            <div class="product-complect-price">15 000 ₽</div>
+            <button class="btn-outline small">Добавить</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Варианты исполнения -->
+      <section class="product-variants">
+        <div class="product-bg-title">Execution options</div>
+        <h2 class="product-section-title">Варианты исполнения</h2>
+
+        <div class="product-variants-table">
+          <div class="table-row table-head">
+            <div class="table-cell">Модель</div>
+            <div class="table-cell">Цена</div>
+            <div class="table-cell">Длина, см</div>
+            <div class="table-cell">Ширина, см</div>
+            <div class="table-cell">Глубина, см</div>
+            <div class="table-cell">Объем, л</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-cell">Модель 1</div>
+            <div class="table-cell">22 300 ₽</div>
+            <div class="table-cell">150</div>
+            <div class="table-cell">70</div>
+            <div class="table-cell">37,5</div>
+            <div class="table-cell">150</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-cell">Модель 2</div>
+            <div class="table-cell">36 000 ₽</div>
+            <div class="table-cell">160</div>
+            <div class="table-cell">70</div>
+            <div class="table-cell">37,5</div>
+            <div class="table-cell">150</div>
+          </div>
+
+          <div class="table-row">
+            <div class="table-cell">Модель 3</div>
+            <div class="table-cell">21 600 ₽</div>
+            <div class="table-cell">140</div>
+            <div class="table-cell">70</div>
+            <div class="table-cell">37,5</div>
+            <div class="table-cell">150</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Рекомендованные товары -->
+      <section class="product-section">
+        <div class="product-bg-title">Recommended products</div>
+        <h2 class="product-section-title">Рекомендуемые товары</h2>
+
+        <div class="product-cards-row">
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-green">Хит продаж</div>
+            <div class="product-mini-img"><img src="" alt="Товар 1"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-blue">Новинка</div>
+            <div class="product-mini-img"><img src="" alt="Товар 2"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-img"><img src="" alt="Товар 3"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-green">Хит продаж</div>
+            <div class="product-mini-img"><img src="" alt="Товар 4"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Товары из коллекции Миа -->
+      <section class="product-section">
+        <div class="product-bg-title">Recommended products</div>
+        <h2 class="product-section-title">Рекомендуемые товары</h2>
+
+        <div class="product-cards-row">
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-green">Хит продаж</div>
+            <div class="product-mini-img"><img src="" alt="Товар 1"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-blue">Новинка</div>
+            <div class="product-mini-img"><img src="" alt="Товар 2"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-img"><img src="" alt="Товар 3"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-green">Хит продаж</div>
+            <div class="product-mini-img"><img src="" alt="Товар 4"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Похожие товары -->
+      <section class="product-section">
+        <div class="product-bg-title">Recommended products</div>
+        <h2 class="product-section-title">Рекомендуемые товары</h2>
+
+        <div class="product-cards-row">
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-green">Хит продаж</div>
+            <div class="product-mini-img"><img src="" alt="Товар 1"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-blue">Новинка</div>
+            <div class="product-mini-img"><img src="" alt="Товар 2"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-img"><img src="" alt="Товар 3"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+
+          <article class="product-mini-card">
+            <div class="product-mini-badge product-mini-badge-green">Хит продаж</div>
+            <div class="product-mini-img"><img src="" alt="Товар 4"></div>
+            <div class="product-mini-body">
+              <div class="product-mini-name">Наименование</div>
+              <div class="product-mini-price">15 000 ₽</div>
+              <button class="btn-primary small">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-logo">
+            <img src="" alt="Логотип">
+            <span>GIDRATOP</span>
+          </div>
+          <div class="footer-social">
+            <a href="#">vk</a>
+            <a href="#">fb</a>
+            <a href="#">ig</a>
+            <a href="#">yt</a>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4>Покупателям</h4>
+            <a href="#">Как заказать</a>
+            <a href="#">Оплата</a>
+            <a href="#">Доставка</a>
+          </div>
+          <div class="footer-column">
+            <h4>Компания</h4>
+            <a href="#">О нас</a>
+            <a href="#">Новости</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="footer-column">
+            <h4>Контакты</h4>
+            <p>г. Москва</p>
+            <p>8 800 000 00 00</p>
+            <p>info@gidratop.ru</p>
+          </div>
+          <div class="footer-column footer-column-up">
+            <button class="btn-primary footer-btn">Наверх</button>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2025 GIDRATOP</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
